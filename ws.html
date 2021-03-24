@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Anders øvelseshjemmeside</title>
+	 <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script ttype="text/javascript" src="data.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  <style>
+  h1, h2,h3,p,form{
+    text-align: center;
+  }
+
+  .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  size: 40%;
+}
+
+label {
+    font-size: 20px;
+}
+
+input[type=radio] {
+    width:20px;
+    height:20px;
+}
+
+img {
+  width: 600px;
+}
+
+</style>
+
+</head>
+
+<body>
+	<header>
+    	<div class="header">
+      </div>
+  </header>
+
+    <div>
+      <h1 id="billedtitle"><script type="text/javascript">document.getElementById('billedtitle').innerText = billedtitle</script></h1>
+      <img id='img' src = '' class = 'center'>
+      <div id="log"></div>
+        <div class="knapper" align="center">
+          <button class="button" onclick="check()">Check</button>
+          <button type="button" onclick="sletBillede()">Slet</button>
+          <button type="button" onclick="exportJSON()">Export</button>
+        </div>
+    </div>
+
+    <footer>
+      <div class="footer"> 
+      	<small>
+        <p id="counter"><script type="text/javascript">document.getElementById('counter').innerText = counter</script></p>
+      	<p>&copy; Naja Suhr</p>
+      	</small>
+      </div>
+    </footer>
+</body>
+</html>
